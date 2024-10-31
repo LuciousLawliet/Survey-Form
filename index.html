@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>
+        My Website Survey Form
+    </title>
+</head>
+
+<body>
+    <h1 id="title">
+        My Website Survey Form
+    </h1>
+    <p id="description">
+        Thanks for visiting my personal website. Please help me to improve my website by filling out this form.
+    </p>
+    <form id="survey-form">
+        <div class="person-name">
+            <label id="name-label">
+                Name
+            </label>
+            <br>
+            <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="person-email">
+            <label id="email-label">
+                Email
+            </label>
+            <br>
+            <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="person-role">
+            <label id="role-label">
+                Current role
+            </label>
+            <br>
+            <select id="dropdown">
+                <option value="">
+                    Select current role
+                </option>
+                <option value="student">
+                    Student
+                </option>
+                <option value="fulltime">
+                    Fulltime
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+        </div>
+        <div class="rating">
+            <label id="number-label">
+                Rating
+            </label>
+            <br>
+            <input id="number" type="number" placeholder="Rating 1 - 10" min=1 max=10 />
+        </div>
+        <div class="person-recommend">
+            <label id="recommend-label">
+                Would you recommend my website to a friend?
+            </label>
+            <br>
+            <input id="1" type="radio" value="definitely" name="recommend" />
+            <label for="1">
+                Definitely
+            </label>
+            <br>
+            <input id="2" type="radio" value="maybe" name="recommend" />
+            <label for="2">
+                Maybe
+            </label>
+            <br>
+            <input id="3" type="radio" value="no" name="recommend" />
+            <label for="3">
+                No
+            </label>
+        </div>
+        <div class="person-improve">
+            <label id="improve-label">
+                What would you like to see improved?<span id="desc">
+                    (Check all that apply)</span></label>
+            <br>
+            <input id="improve1" type="checkbox" value="content" name="improve1">
+            <label for="improve1">
+                Content
+            </label>
+            </input>
+            <br>
+            <input id="improve2" type="checkbox" value="design" name="improve2">
+            <label for="improve2">
+                Design
+            </label>
+            </input>
+            <br>
+            <input id="improve3" type="checkbox" value="typography" name="improve3">
+            <label for="improve3">
+                Typography
+            </label>
+            </input>
+        </div>
+        <div class="person-suggestion">
+            <label id="sugestion-label">
+                Any suggestions?
+            </label>
+            <br>
+            <textarea name="suggestion" form="survey-form" placeholder="Enter your suggestion here..."></textarea>
+        </div>
+        <div class="submit-button">
+            <button id="submit" type="submit">
+                SUBMIT
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>
